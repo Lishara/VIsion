@@ -1,4 +1,4 @@
-# TF Lite Android App
+# Vision Mobile APP
 
 ## Building from Source with Bazel
 
@@ -20,17 +20,3 @@
         you have installed.
       - By default, Android Studio will install the SDK to `~/Android/Sdk` and
         the NDK to `~/Android/Sdk/ndk-bundle`.
-
-2. Build the app with Bazel. The demo needs C++11:
-
-  ```shell
-  bazel build -c opt --cxxopt='--std=c++11' \
-    //tensorflow/contrib/lite/java/demo/app/src/main:TfLiteCameraDemo
-  ```
-
-3. Install the demo on a
-   [debug-enabled device](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android#install):
-
-  ```shell
-  adb install bazel-bin/tensorflow/contrib/lite/java/demo/app/src/main/TfLiteCameraDemo.apk
-  ```
